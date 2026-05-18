@@ -7,8 +7,9 @@ public class Main {
 		Repartidor repartidor = new Repartidor("Lucía Lousa", "LuciaL@gmail.com","43747374","Zona Centro");
 		
 		
-		Producto hamburguesa = new Producto("Hamburguesa Completa",8.50,"Comida");
-		Producto patatas = new Producto("Patatas Fritas",5.50,"Comida");
+		Producto hamburguesa = new Producto("Hamburguesa Completa",8.50,CategoriaProducto.COMIDA);
+		Producto patatas = new Producto("Patatas Fritas",5.50,CategoriaProducto.COMIDA);
+		Producto nestea = new Producto("Nestea",4,CategoriaProducto.BEBIDA);
 	
 		
 		System.out.println("--- Creando Pedido ---");
@@ -20,6 +21,7 @@ public class Main {
       
         pedido1.agregarProducto(hamburguesa);
         pedido1.agregarProducto(patatas);
+        pedido1.agregarProducto(nestea);
         
        
         pedido1.agregarProducto(hamburguesa); 

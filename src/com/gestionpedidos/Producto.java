@@ -4,9 +4,9 @@ package com.gestionpedidos;
 public class Producto {
 	private String nombre;
 	private double precio;
-	private String categoria;
+	private CategoriaProducto categoria;
 	
-	public Producto(String nombre, double precio, String categoria) {
+	public Producto(String nombre, double precio, CategoriaProducto categoria) {
 		this.nombre=nombre;
 		this.precio=precio;
 		this.categoria=categoria;
@@ -14,7 +14,7 @@ public class Producto {
 	
 	public String getNombre() {return nombre;}
 	public double getPrecio() {return precio;}
-	public String getCategoria() {return categoria;}
+	public CategoriaProducto getCategoria() {return categoria;}
 	
 	}
 
